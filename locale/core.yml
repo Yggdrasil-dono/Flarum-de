@@ -47,7 +47,7 @@ core:
   group_mod: Moderator
   group_mods: Moderatoren
   invalid_login: Login inkorrekt.
-  joined: "Registriert am {ago}"
+  joined: "Registriert: {ago}"
   load_more: Mehr laden
   log_in: Einloggen
   log_in_to_reply: Einloggen um zu antworten

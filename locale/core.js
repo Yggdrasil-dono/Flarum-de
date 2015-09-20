@@ -7,12 +7,12 @@ app.translator.plural = function(count) {
   }
 };
 
-moment.locale('fr', {
-  months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
-  monthsShort : 'janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
-  weekdays : 'dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi'.split('_'),
-  weekdaysShort : 'dim._lun._mar._mer._jeu._ven._sam.'.split('_'),
-  weekdaysMin : 'Di_Lu_Ma_Me_Je_Ve_Sa'.split('_'),
+moment.locale('de', {
+  months : 'Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember'.split('_'),
+  monthsShort : 'Jan._Febr._März_Apr._Mai_Juni_Juli_Aug._Sept._Okt._Nov._Dez.'.split('_'),
+  weekdays : 'Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag'.split('_'),
+  weekdaysShort : 'So._Mo._Di._Mi._Do._Fr._Sa.'.split('_'),
+  weekdaysMin : 'So_Mo_Di_Mi_Do_Fr_Sa'.split('_'),
   longDateFormat : {
     LT : 'HH:mm',
     LTS : 'HH:mm:ss',
@@ -22,27 +22,27 @@ moment.locale('fr', {
     LLLL : 'dddd D MMMM YYYY HH:mm'
   },
   calendar : {
-    sameDay: '[Aujourd\'hui à] LT',
-    nextDay: '[Demain à] LT',
-    nextWeek: 'dddd [à] LT',
-    lastDay: '[Hier à] LT',
-    lastWeek: 'dddd [dernier à] LT',
+    sameDay: '[Heute] LT',
+    nextDay: '[Morgen] LT',
+    nextWeek: 'dddd [bis] LT',
+    lastDay: '[Gestern] LT',
+    lastWeek: 'dddd [bis] LT',
     sameElse: 'L'
   },
   relativeTime : {
-    future : 'dans %s',
-    past : 'il y a %s',
-    s : 'quelques secondes',
-    m : 'une minute',
-    mm : '%d minutes',
-    h : 'une heure',
-    hh : '%d heures',
-    d : 'un jour',
-    dd : '%d jours',
-    M : 'un mois',
-    MM : '%d mois',
-    y : 'un an',
-    yy : '%d ans'
+    future : 'in %s',
+    past : 'vor %s',
+    s : 'wenigen Sekunden',
+    m : 'einer Minute',
+    mm : '%d Minuten',
+    h : 'einer Stunde',
+    hh : '%d Stunden',
+    d : 'einem Tag',
+    dd : '%d Tagen',
+    M : 'einem Monat',
+    MM : '%d Monaten',
+    y : 'einem Jahr',
+    yy : '%d Jahren'
   },
   ordinalParse: /\d{1,2}(er|)/,
   ordinal : function (number) {
