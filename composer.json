@@ -1,10 +1,37 @@
 {
-    "autoload": {
-        "psr-4": {
-            "Yggdrasil\\": "src/"
+    "name": "cbmainz/flarum-de",
+    "type": "flarum-extension",
+    "description": "German language pack for Flarum and its bundled extensions.",
+    "homepage": "https://flarum.today/de/",
+    "keywords": ["locale"],
+    "version": "v1.0.4",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcel Ehrlich",
+            "email": "marcelehrlich@hotmail.com",
         }
+    ],
+    "support": {
+        "source": "https://github.com/Yggdrasil-dono/Flarum-de",
+        "issues": "https://github.com/Yggdrasil-dono/Flarum-de/issues"
     },
-    "scripts": {
-        "style": "phpcs --standard=PSR2 -np src"
+    "require": {
+        "flarum/core": "^0.1.0-beta.4"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "German",
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#3f51b5",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "flarum-locale": {
+            "code": "de",
+            "title": "Deutsch"
+        }
     }
 }
